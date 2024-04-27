@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/ayotomiwasalau/Documents/data-tools-project/udacity/mlops/ml-pipeline/ml-pipe/mlruns/0/6d252b173aac40cb83158cdc3539fd12/artifacts
+end_time: 1714240791184
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 6d252b173aac40cb83158cdc3539fd12
+run_name: delightful-elk-45
+run_uuid: 6d252b173aac40cb83158cdc3539fd12
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1714240742696
+status: 3
+tags: []
+user_id: ayotomiwasalau

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/ayotomiwasalau/Documents/data-tools-project/udacity/mlops/ml-pipeline/ml-pipe/mlruns/0/1ffa48932dcb457da7e9b17fc9aeb0e8/artifacts
+end_time: 1714240322528
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1ffa48932dcb457da7e9b17fc9aeb0e8
+run_name: adaptable-pug-945
+run_uuid: 1ffa48932dcb457da7e9b17fc9aeb0e8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1714240266014
+status: 3
+tags: []
+user_id: ayotomiwasalau

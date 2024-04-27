@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/ayotomiwasalau/Documents/data-tools-project/udacity/mlops/ml-pipeline/ml-pipe/mlruns/0/6196b5a430e4462eb9286ea5f8dc622a/artifacts
+end_time: 1714218064602
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 6196b5a430e4462eb9286ea5f8dc622a
+run_name: secretive-dolphin-15
+run_uuid: 6196b5a430e4462eb9286ea5f8dc622a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1714218025721
+status: 3
+tags: []
+user_id: ayotomiwasalau

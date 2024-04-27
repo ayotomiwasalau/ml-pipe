@@ -1,0 +1,54 @@
+{
+    "os": "macOS-13.5.2-arm64-arm-64bit",
+    "python": "3.9.19",
+    "heartbeatAt": "2024-04-27T17:59:58.141416",
+    "startedAt": "2024-04-27T17:59:56.153868",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--model_export",
+        "model_export:latest",
+        "--test_data",
+        "data_test.csv:latest"
+    ],
+    "state": "running",
+    "program": "/Users/ayotomiwasalau/Documents/data-tools-project/udacity/mlops/ml-pipeline/ml-pipe/evaluate/run.py",
+    "codePathLocal": "run.py",
+    "codePath": "evaluate/run.py",
+    "git": {
+        "remote": "https://github.com/ayotomiwasalau/ml-pipe.git",
+        "commit": "c753284f362bc3769c2df179aa3eddb270d036aa"
+    },
+    "email": "ayotomiwasalau@gmail.com",
+    "root": "/Users/ayotomiwasalau/Documents/data-tools-project/udacity/mlops/ml-pipeline/ml-pipe",
+    "host": "ayotomialausMBP",
+    "username": "ayotomiwasalau",
+    "executable": "/Users/ayotomiwasalau/anaconda3/envs/mlflow-2835dda73544ca5fa7b909cd28779314b98fdca5/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 3228,
+        "min": 600,
+        "max": 3228
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3228,
+            "min": 600,
+            "max": 3228
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 460.4317207336426,
+            "used": 11.107654571533203
+        }
+    },
+    "gpuapple": {
+        "type": "arm",
+        "vendor": "Apple"
+    },
+    "memory": {
+        "total": 16.0
+    }
+}

@@ -1,0 +1,7 @@
+
+2024-04-27 18:58:45,594 Downloading and reading artifact
+2024-04-27 18:58:48,752 Splitting data into train, val and test
+2024-04-27 18:58:48,786 Uploading the train dataset to data_train.csv
+2024-04-27 18:58:49,001 Logging artifact
+2024-04-27 18:58:52,139 Uploading the test dataset to data_test.csv
+2024-04-27 18:58:52,240 Logging artifact

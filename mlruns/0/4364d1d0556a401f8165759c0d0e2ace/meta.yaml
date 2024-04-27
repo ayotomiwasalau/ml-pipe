@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/ayotomiwasalau/Documents/data-tools-project/udacity/mlops/ml-pipeline/ml-pipe/mlruns/0/4364d1d0556a401f8165759c0d0e2ace/artifacts
+end_time: 1714240349281
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4364d1d0556a401f8165759c0d0e2ace
+run_name: nervous-lamb-173
+run_uuid: 4364d1d0556a401f8165759c0d0e2ace
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1714239300349
+status: 4
+tags: []
+user_id: ayotomiwasalau

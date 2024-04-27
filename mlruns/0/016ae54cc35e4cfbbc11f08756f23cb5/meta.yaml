@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/ayotomiwasalau/Documents/data-tools-project/udacity/mlops/ml-pipeline/ml-pipe/mlruns/0/016ae54cc35e4cfbbc11f08756f23cb5/artifacts
+end_time: 1714218895329
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 016ae54cc35e4cfbbc11f08756f23cb5
+run_name: adorable-flea-543
+run_uuid: 016ae54cc35e4cfbbc11f08756f23cb5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1714218022762
+status: 4
+tags: []
+user_id: ayotomiwasalau

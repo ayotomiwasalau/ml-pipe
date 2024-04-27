@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/ayotomiwasalau/Documents/data-tools-project/udacity/mlops/ml-pipeline/ml-pipe/mlruns/0/4a8bf6cb93dc488a8d133744b03caef4/artifacts
+end_time: 1714239362783
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4a8bf6cb93dc488a8d133744b03caef4
+run_name: funny-croc-44
+run_uuid: 4a8bf6cb93dc488a8d133744b03caef4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1714239343351
+status: 3
+tags: []
+user_id: ayotomiwasalau

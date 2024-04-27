@@ -1,0 +1,148 @@
+
+2024-04-27 13:19:56,587 Downloading artifact
+[34m[1mwandb[39m[22m: [33mWARNING[39m A graphql request initiated by the public wandb API timed out (timeout=19 sec). Create a new API with an integer timeout larger than 19, e.g., `api = wandb.Api(timeout=29)` to increase the graphql timeout.
+[34m[1mwandb[39m[22m: [32m[41mERROR[39m[49m HTTPSConnectionPool(host='api.wandb.ai', port=443): Read timed out. (read timeout=19)
+Traceback (most recent call last):
+  File "/Users/ayotomiwasalau/anaconda3/envs/mlflow-7bd88c9e64ceb46f797079836efc7bf9aa6d00e9/lib/python3.12/site-packages/urllib3/connectionpool.py", line 537, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "/Users/ayotomiwasalau/anaconda3/envs/mlflow-7bd88c9e64ceb46f797079836efc7bf9aa6d00e9/lib/python3.12/site-packages/urllib3/connection.py", line 466, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ayotomiwasalau/anaconda3/envs/mlflow-7bd88c9e64ceb46f797079836efc7bf9aa6d00e9/lib/python3.12/http/client.py", line 1428, in getresponse
+    response.begin()
+  File "/Users/ayotomiwasalau/anaconda3/envs/mlflow-7bd88c9e64ceb46f797079836efc7bf9aa6d00e9/lib/python3.12/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/Users/ayotomiwasalau/anaconda3/envs/mlflow-7bd88c9e64ceb46f797079836efc7bf9aa6d00e9/lib/python3.12/http/client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ayotomiwasalau/anaconda3/envs/mlflow-7bd88c9e64ceb46f797079836efc7bf9aa6d00e9/lib/python3.12/socket.py", line 707, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ayotomiwasalau/anaconda3/envs/mlflow-7bd88c9e64ceb46f797079836efc7bf9aa6d00e9/lib/python3.12/ssl.py", line 1252, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ayotomiwasalau/anaconda3/envs/mlflow-7bd88c9e64ceb46f797079836efc7bf9aa6d00e9/lib/python3.12/ssl.py", line 1104, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "/Users/ayotomiwasalau/anaconda3/envs/mlflow-7bd88c9e64ceb46f797079836efc7bf9aa6d00e9/lib/python3.12/site-packages/requests/adapters.py", line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/Users/ayotomiwasalau/anaconda3/envs/mlflow-7bd88c9e64ceb46f797079836efc7bf9aa6d00e9/lib/python3.12/site-packages/urllib3/connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/Users/ayotomiwasalau/anaconda3/envs/mlflow-7bd88c9e64ceb46f797079836efc7bf9aa6d00e9/lib/python3.12/site-packages/urllib3/util/retry.py", line 470, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ayotomiwasalau/anaconda3/envs/mlflow-7bd88c9e64ceb46f797079836efc7bf9aa6d00e9/lib/python3.12/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/Users/ayotomiwasalau/anaconda3/envs/mlflow-7bd88c9e64ceb46f797079836efc7bf9aa6d00e9/lib/python3.12/site-packages/urllib3/connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/ayotomiwasalau/anaconda3/envs/mlflow-7bd88c9e64ceb46f797079836efc7bf9aa6d00e9/lib/python3.12/site-packages/urllib3/connectionpool.py", line 539, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/Users/ayotomiwasalau/anaconda3/envs/mlflow-7bd88c9e64ceb46f797079836efc7bf9aa6d00e9/lib/python3.12/site-packages/urllib3/connectionpool.py", line 370, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Read timed out. (read timeout=19)
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/Users/ayotomiwasalau/anaconda3/envs/mlflow-7bd88c9e64ceb46f797079836efc7bf9aa6d00e9/lib/python3.12/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ayotomiwasalau/anaconda3/envs/mlflow-7bd88c9e64ceb46f797079836efc7bf9aa6d00e9/lib/python3.12/site-packages/wandb/apis/public/api.py", line 958, in artifact
+    artifact = wandb.Artifact._from_name(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ayotomiwasalau/anaconda3/envs/mlflow-7bd88c9e64ceb46f797079836efc7bf9aa6d00e9/lib/python3.12/site-packages/wandb/sdk/artifacts/artifact.py", line 257, in _from_name
+    response = client.execute(
+               ^^^^^^^^^^^^^^^
+  File "/Users/ayotomiwasalau/anaconda3/envs/mlflow-7bd88c9e64ceb46f797079836efc7bf9aa6d00e9/lib/python3.12/site-packages/wandb/sdk/lib/retry.py", line 212, in wrapped_fn
+    return retrier(*args, **kargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ayotomiwasalau/anaconda3/envs/mlflow-7bd88c9e64ceb46f797079836efc7bf9aa6d00e9/lib/python3.12/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ayotomiwasalau/anaconda3/envs/mlflow-7bd88c9e64ceb46f797079836efc7bf9aa6d00e9/lib/python3.12/site-packages/wandb/apis/public/api.py", line 73, in execute
+    return self._client.execute(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ayotomiwasalau/anaconda3/envs/mlflow-7bd88c9e64ceb46f797079836efc7bf9aa6d00e9/lib/python3.12/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ayotomiwasalau/anaconda3/envs/mlflow-7bd88c9e64ceb46f797079836efc7bf9aa6d00e9/lib/python3.12/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ayotomiwasalau/anaconda3/envs/mlflow-7bd88c9e64ceb46f797079836efc7bf9aa6d00e9/lib/python3.12/site-packages/wandb/sdk/lib/gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ayotomiwasalau/anaconda3/envs/mlflow-7bd88c9e64ceb46f797079836efc7bf9aa6d00e9/lib/python3.12/site-packages/requests/sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ayotomiwasalau/anaconda3/envs/mlflow-7bd88c9e64ceb46f797079836efc7bf9aa6d00e9/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ayotomiwasalau/anaconda3/envs/mlflow-7bd88c9e64ceb46f797079836efc7bf9aa6d00e9/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ayotomiwasalau/anaconda3/envs/mlflow-7bd88c9e64ceb46f797079836efc7bf9aa6d00e9/lib/python3.12/site-packages/requests/adapters.py", line 532, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.wandb.ai', port=443): Read timed out. (read timeout=19)
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/Users/ayotomiwasalau/Documents/data-tools-project/udacity/mlops/ml-pipeline/ml-pipe/preprocess/run.py", line 80, in <module>
+    go(args)
+  File "/Users/ayotomiwasalau/Documents/data-tools-project/udacity/mlops/ml-pipeline/ml-pipe/preprocess/run.py", line 19, in go
+    artifact = run.use_artifact(args.input_artifact)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ayotomiwasalau/anaconda3/envs/mlflow-7bd88c9e64ceb46f797079836efc7bf9aa6d00e9/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 371, in wrapper_fn
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ayotomiwasalau/anaconda3/envs/mlflow-7bd88c9e64ceb46f797079836efc7bf9aa6d00e9/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 361, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ayotomiwasalau/anaconda3/envs/mlflow-7bd88c9e64ceb46f797079836efc7bf9aa6d00e9/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 2872, in use_artifact
+    artifact = public_api.artifact(type=type, name=name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ayotomiwasalau/anaconda3/envs/mlflow-7bd88c9e64ceb46f797079836efc7bf9aa6d00e9/lib/python3.12/site-packages/wandb/apis/normalize.py", line 87, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/Users/ayotomiwasalau/anaconda3/envs/mlflow-7bd88c9e64ceb46f797079836efc7bf9aa6d00e9/lib/python3.12/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ayotomiwasalau/anaconda3/envs/mlflow-7bd88c9e64ceb46f797079836efc7bf9aa6d00e9/lib/python3.12/site-packages/wandb/apis/public/api.py", line 958, in artifact
+    artifact = wandb.Artifact._from_name(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ayotomiwasalau/anaconda3/envs/mlflow-7bd88c9e64ceb46f797079836efc7bf9aa6d00e9/lib/python3.12/site-packages/wandb/sdk/artifacts/artifact.py", line 257, in _from_name
+    response = client.execute(
+               ^^^^^^^^^^^^^^^
+  File "/Users/ayotomiwasalau/anaconda3/envs/mlflow-7bd88c9e64ceb46f797079836efc7bf9aa6d00e9/lib/python3.12/site-packages/wandb/sdk/lib/retry.py", line 212, in wrapped_fn
+    return retrier(*args, **kargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ayotomiwasalau/anaconda3/envs/mlflow-7bd88c9e64ceb46f797079836efc7bf9aa6d00e9/lib/python3.12/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ayotomiwasalau/anaconda3/envs/mlflow-7bd88c9e64ceb46f797079836efc7bf9aa6d00e9/lib/python3.12/site-packages/wandb/apis/public/api.py", line 73, in execute
+    return self._client.execute(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ayotomiwasalau/anaconda3/envs/mlflow-7bd88c9e64ceb46f797079836efc7bf9aa6d00e9/lib/python3.12/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ayotomiwasalau/anaconda3/envs/mlflow-7bd88c9e64ceb46f797079836efc7bf9aa6d00e9/lib/python3.12/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ayotomiwasalau/anaconda3/envs/mlflow-7bd88c9e64ceb46f797079836efc7bf9aa6d00e9/lib/python3.12/site-packages/wandb/sdk/lib/gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ayotomiwasalau/anaconda3/envs/mlflow-7bd88c9e64ceb46f797079836efc7bf9aa6d00e9/lib/python3.12/site-packages/requests/sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ayotomiwasalau/anaconda3/envs/mlflow-7bd88c9e64ceb46f797079836efc7bf9aa6d00e9/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ayotomiwasalau/anaconda3/envs/mlflow-7bd88c9e64ceb46f797079836efc7bf9aa6d00e9/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ayotomiwasalau/anaconda3/envs/mlflow-7bd88c9e64ceb46f797079836efc7bf9aa6d00e9/lib/python3.12/site-packages/requests/adapters.py", line 532, in send
+    raise ReadTimeout(e, request=request)
+wandb.errors.CommError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Read timed out. (read timeout=19)

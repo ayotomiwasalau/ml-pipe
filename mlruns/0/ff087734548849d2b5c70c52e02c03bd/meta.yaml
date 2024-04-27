@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/ayotomiwasalau/Documents/data-tools-project/udacity/mlops/ml-pipeline/ml-pipe/mlruns/0/ff087734548849d2b5c70c52e02c03bd/artifacts
+end_time: 1714240819907
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ff087734548849d2b5c70c52e02c03bd
+run_name: respected-calf-872
+run_uuid: ff087734548849d2b5c70c52e02c03bd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1714240653660
+status: 3
+tags: []
+user_id: ayotomiwasalau

@@ -1,0 +1,60 @@
+[1m========================================================================== test session starts ==========================================================================
+platform darwin -- Python 3.12.3, pytest-8.1.2, pluggy-1.5.0 -- /Users/ayotomiwasalau/anaconda3/envs/mlflow-679fd1c82fbb721b6cda284a11a5a716ba912909/bin/python3.12
+cachedir: .pytest_cache
+rootdir: /Users/ayotomiwasalau/Documents/data-tools-project/udacity/mlops/ml-pipeline/ml-pipe/check_data
+[1mcollected 4 items                                                                                                                                                       
+test_data.py::test_column_presence_and_type [32mPASSED
+test_data.py::test_class_names [32mPASSED
+test_data.py::test_column_ranges [32mPASSED
+test_data.py::test_kolmogorov_smirnov [31mFAILED
+=============================================================================== FAILURES ================================================================================
+[31m[1m________________________________________________________________________ test_kolmogorov_smirnov ________________________________________________________________________
+data = (       Unnamed: 0  danceability  energy  ...                                      song_name                        ti...           NaN       Best of Hardstyle 2020                         Best of Hardstyle 2020
+[41975 rows x 19 columns])
+ks_alpha = 0.05
+    def test_kolmogorov_smirnov(data, ks_alpha):
+        sample1, sample2 = data
+        columns = [
+            "danceability",
+            "energy",
+            "loudness",
+            "speechiness",
+            "acousticness",
+            "instrumentalness",
+            "liveness",
+            "valence",
+            "tempo",
+            "duration_ms"
+        ]
+        # Bonferroni correction for multiple hypothesis testing
+        # (see my blog post on this topic to see where this comes from:
+        # https://towardsdatascience.com/precision-and-recall-trade-off-and-multiple-hypothesis-testing-family-wise-error-rate-vs-false-71a85057ca2b)
+        alpha_prime = 1 - (1 - ks_alpha)**(1 / len(columns))
+        for col in columns:
+            ts, p_value = scipy.stats.ks_2samp(sample1[col], sample2[col])
+            # NOTE: as always, the p-value should be interpreted as the probability of
+            # obtaining a test statistic (TS) equal or more extreme that the one we got
+            # by chance, when the null hypothesis is true. If this probability is not
+            # large enough, this dataset should be looked at carefully, hence we fail
+>           assert p_value > alpha_prime
+[31m[1mE           assert nan > 0.005116196891823743
+[31m[1mtest_data.py[39m[22m:120: AssertionError
+[33m=========================================================================== warnings summary ============================================================================
+<frozen importlib._bootstrap>:488
+  <frozen importlib._bootstrap>:488: DeprecationWarning: Type google._upb._message.MessageMapContainer uses PyType_Spec with a metaclass that has custom tp_new. This is deprecated and will no longer be allowed in Python 3.14.
+<frozen importlib._bootstrap>:488
+  <frozen importlib._bootstrap>:488: DeprecationWarning: Type google._upb._message.ScalarMapContainer uses PyType_Spec with a metaclass that has custom tp_new. This is deprecated and will no longer be allowed in Python 3.14.
+../../../../../../../anaconda3/envs/mlflow-679fd1c82fbb721b6cda284a11a5a716ba912909/lib/python3.12/site-packages/google/protobuf/internal/well_known_types.py:174: 4 warnings
+test_data.py: 12 warnings
+  /Users/ayotomiwasalau/anaconda3/envs/mlflow-679fd1c82fbb721b6cda284a11a5a716ba912909/lib/python3.12/site-packages/google/protobuf/internal/well_known_types.py:174: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    self.FromDatetime(datetime.datetime.utcnow())
+test_data.py::test_column_presence_and_type
+  /Users/ayotomiwasalau/Documents/data-tools-project/udacity/mlops/ml-pipeline/ml-pipe/check_data/conftest.py:29: DtypeWarning: Columns (16) have mixed types. Specify dtype option on import or set low_memory=False.
+    sample1 = pd.read_csv(local_path)
+test_data.py::test_column_presence_and_type
+  /Users/ayotomiwasalau/Documents/data-tools-project/udacity/mlops/ml-pipeline/ml-pipe/check_data/conftest.py:32: DtypeWarning: Columns (16) have mixed types. Specify dtype option on import or set low_memory=False.
+    sample2 = pd.read_csv(local_path)
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+[36m[1m======================================================================== short test summary info ========================================================================
+[31mFAILED[39m test_data.py::[1mtest_kolmogorov_smirnov[22m - assert nan > 0.005116196891823743
+[31m=============================================================== [1m1 failed[39m[22m, [32m3 passed[39m, [33m20 warnings[31m in 21.28s ===============================================================

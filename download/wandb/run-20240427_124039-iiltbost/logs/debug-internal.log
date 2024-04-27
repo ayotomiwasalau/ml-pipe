@@ -1,0 +1,194 @@
+2024-04-27 12:40:39,189 INFO    StreamThr :62254 [internal.py:wandb_internal():86] W&B internal server running at pid: 62254, started at: 2024-04-27 12:40:39.187997
+2024-04-27 12:40:39,190 DEBUG   HandlerThread:62254 [handler.py:handle_request():146] handle_request: status
+2024-04-27 12:40:39,192 INFO    WriterThread:62254 [datastore.py:open_for_write():87] open: /Users/ayotomiwasalau/Documents/data-tools-project/udacity/mlops/ml-pipeline/ml-pipe/download/wandb/run-20240427_124039-iiltbost/run-iiltbost.wandb
+2024-04-27 12:40:39,194 DEBUG   SenderThread:62254 [sender.py:send():379] send: header
+2024-04-27 12:40:39,213 DEBUG   SenderThread:62254 [sender.py:send():379] send: run
+2024-04-27 12:40:40,214 INFO    SenderThread:62254 [dir_watcher.py:__init__():211] watching files in: /Users/ayotomiwasalau/Documents/data-tools-project/udacity/mlops/ml-pipeline/ml-pipe/download/wandb/run-20240427_124039-iiltbost/files
+2024-04-27 12:40:40,214 INFO    SenderThread:62254 [sender.py:_start_run_threads():1124] run started: iiltbost with start time 1714218039.188937
+2024-04-27 12:40:40,225 DEBUG   HandlerThread:62254 [handler.py:handle_request():146] handle_request: check_version
+2024-04-27 12:40:40,225 DEBUG   SenderThread:62254 [sender.py:send_request():406] send_request: check_version
+2024-04-27 12:40:41,029 DEBUG   HandlerThread:62254 [handler.py:handle_request():146] handle_request: run_start
+2024-04-27 12:40:41,035 DEBUG   HandlerThread:62254 [system_info.py:__init__():26] System info init
+2024-04-27 12:40:41,035 DEBUG   HandlerThread:62254 [system_info.py:__init__():41] System info init done
+2024-04-27 12:40:41,035 INFO    HandlerThread:62254 [system_monitor.py:start():194] Starting system monitor
+2024-04-27 12:40:41,035 INFO    SystemMonitor:62254 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-04-27 12:40:41,035 INFO    HandlerThread:62254 [system_monitor.py:probe():214] Collecting system info
+2024-04-27 12:40:41,037 INFO    SystemMonitor:62254 [interfaces.py:start():190] Started cpu monitoring
+2024-04-27 12:40:41,037 DEBUG   HandlerThread:62254 [system_info.py:probe():150] Probing system
+2024-04-27 12:40:41,037 INFO    SystemMonitor:62254 [interfaces.py:start():190] Started disk monitoring
+2024-04-27 12:40:41,037 INFO    SystemMonitor:62254 [interfaces.py:start():190] Started gpuapple monitoring
+2024-04-27 12:40:41,042 INFO    SystemMonitor:62254 [interfaces.py:start():190] Started memory monitoring
+2024-04-27 12:40:41,042 INFO    SystemMonitor:62254 [interfaces.py:start():190] Started network monitoring
+2024-04-27 12:40:41,046 DEBUG   HandlerThread:62254 [system_info.py:_probe_git():135] Probing git
+2024-04-27 12:40:41,070 DEBUG   HandlerThread:62254 [system_info.py:_probe_git():143] Probing git done
+2024-04-27 12:40:41,071 DEBUG   HandlerThread:62254 [system_info.py:probe():198] Probing system done
+2024-04-27 12:40:41,071 DEBUG   HandlerThread:62254 [system_monitor.py:probe():223] {'os': 'macOS-13.5.2-arm64-arm-64bit', 'python': '3.12.2', 'heartbeatAt': '2024-04-27T11:40:41.037197', 'startedAt': '2024-04-27T11:40:39.179983', 'docker': None, 'cuda': None, 'args': ('--file_url', 'https://github.com/udacity/nd0821-c2-build-model-workflow-exercises/blob/master/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/genres_mod.parquet?raw=true', '--artifact_name', 'raw_data.parquet', '--artifact_type', 'raw_data', '--artifact_description', 'Data as downloaded'), 'state': 'running', 'program': '/Users/ayotomiwasalau/Documents/data-tools-project/udacity/mlops/ml-pipeline/ml-pipe/download/download_data.py', 'codePathLocal': 'download_data.py', 'codePath': 'download/download_data.py', 'git': {'remote': 'https://github.com/ayotomiwasalau/ml-pipe.git', 'commit': 'c753284f362bc3769c2df179aa3eddb270d036aa'}, 'email': 'ayotomiwasalau@gmail.com', 'root': '/Users/ayotomiwasalau/Documents/data-tools-project/udacity/mlops/ml-pipeline/ml-pipe', 'host': 'ayotomialausMBP', 'username': 'ayotomiwasalau', 'executable': '/Users/ayotomiwasalau/anaconda3/envs/mlflow-5daac8e92275e8dddf3caefc785f4a790d74a6e6/bin/python', 'cpu_count': 8, 'cpu_count_logical': 8, 'cpu_freq': {'current': 3228, 'min': 600, 'max': 3228}, 'cpu_freq_per_core': [{'current': 3228, 'min': 600, 'max': 3228}], 'disk': {'/': {'total': 460.4317207336426, 'used': 11.107654571533203}}, 'gpuapple': {'type': 'arm', 'vendor': 'Apple'}, 'memory': {'total': 16.0}}
+2024-04-27 12:40:41,071 INFO    HandlerThread:62254 [system_monitor.py:probe():224] Finished collecting system info
+2024-04-27 12:40:41,071 INFO    HandlerThread:62254 [system_monitor.py:probe():227] Publishing system info
+2024-04-27 12:40:41,071 DEBUG   HandlerThread:62254 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2024-04-27 12:40:41,220 INFO    Thread-12 :62254 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/ayotomiwasalau/Documents/data-tools-project/udacity/mlops/ml-pipeline/ml-pipe/download/wandb/run-20240427_124039-iiltbost/files/conda-environment.yaml
+2024-04-27 12:40:41,915 DEBUG   HandlerThread:62254 [system_info.py:_save_conda():222] Saving conda packages done
+2024-04-27 12:40:41,915 INFO    HandlerThread:62254 [system_monitor.py:probe():229] Finished publishing system info
+2024-04-27 12:40:41,917 DEBUG   SenderThread:62254 [sender.py:send():379] send: files
+2024-04-27 12:40:41,917 INFO    SenderThread:62254 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-04-27 12:40:41,929 DEBUG   HandlerThread:62254 [handler.py:handle_request():146] handle_request: python_packages
+2024-04-27 12:40:41,929 DEBUG   SenderThread:62254 [sender.py:send_request():406] send_request: python_packages
+2024-04-27 12:40:41,930 DEBUG   SenderThread:62254 [sender.py:send():379] send: telemetry
+2024-04-27 12:40:41,930 DEBUG   HandlerThread:62254 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-27 12:40:41,930 DEBUG   HandlerThread:62254 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-27 12:40:41,930 DEBUG   SenderThread:62254 [sender.py:send_request():406] send_request: stop_status
+2024-04-27 12:40:42,225 INFO    Thread-12 :62254 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/ayotomiwasalau/Documents/data-tools-project/udacity/mlops/ml-pipeline/ml-pipe/download/wandb/run-20240427_124039-iiltbost/files/conda-environment.yaml
+2024-04-27 12:40:42,225 INFO    Thread-12 :62254 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/ayotomiwasalau/Documents/data-tools-project/udacity/mlops/ml-pipeline/ml-pipe/download/wandb/run-20240427_124039-iiltbost/files/wandb-metadata.json
+2024-04-27 12:40:42,225 INFO    Thread-12 :62254 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/ayotomiwasalau/Documents/data-tools-project/udacity/mlops/ml-pipeline/ml-pipe/download/wandb/run-20240427_124039-iiltbost/files/requirements.txt
+2024-04-27 12:40:43,287 INFO    wandb-upload_0:62254 [upload_job.py:push():131] Uploaded file /var/folders/_r/dchdvrt17dbb3l_1jl9f8gm80000gn/T/tmpw7yv_4dzwandb/3o5xu56c-wandb-metadata.json
+2024-04-27 12:40:44,634 DEBUG   HandlerThread:62254 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 12:40:46,887 DEBUG   HandlerThread:62254 [handler.py:handle_request():146] handle_request: log_artifact
+2024-04-27 12:40:46,888 DEBUG   SenderThread:62254 [sender.py:send_request():406] send_request: log_artifact
+2024-04-27 12:40:47,248 INFO    Thread-12 :62254 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/ayotomiwasalau/Documents/data-tools-project/udacity/mlops/ml-pipeline/ml-pipe/download/wandb/run-20240427_124039-iiltbost/files/output.log
+2024-04-27 12:40:49,261 INFO    Thread-12 :62254 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/ayotomiwasalau/Documents/data-tools-project/udacity/mlops/ml-pipeline/ml-pipe/download/wandb/run-20240427_124039-iiltbost/files/output.log
+2024-04-27 12:40:50,470 INFO    wandb-upload_0:62254 [upload_job.py:push():89] Uploaded file /Users/ayotomiwasalau/Library/Application Support/wandb/artifacts/staging/tmpg_63dplu
+2024-04-27 12:40:51,619 INFO    SenderThread:62254 [sender.py:send_request_log_artifact():1456] logged artifact raw_data.parquet - {'id': 'QXJ0aWZhY3Q6ODEyNzg2MDY4', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE2NzQxMTkzMA==', 'latestArtifact': None}}
+2024-04-27 12:40:51,620 DEBUG   HandlerThread:62254 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 12:40:53,468 DEBUG   SenderThread:62254 [sender.py:send():379] send: telemetry
+2024-04-27 12:40:53,470 DEBUG   SenderThread:62254 [sender.py:send():379] send: exit
+2024-04-27 12:40:53,470 INFO    SenderThread:62254 [sender.py:send_exit():586] handling exit code: 0
+2024-04-27 12:40:53,470 INFO    SenderThread:62254 [sender.py:send_exit():588] handling runtime: 12
+2024-04-27 12:40:53,471 INFO    SenderThread:62254 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-27 12:40:53,471 INFO    SenderThread:62254 [sender.py:send_exit():594] send defer
+2024-04-27 12:40:53,471 DEBUG   HandlerThread:62254 [handler.py:handle_request():146] handle_request: defer
+2024-04-27 12:40:53,471 INFO    HandlerThread:62254 [handler.py:handle_request_defer():172] handle defer: 0
+2024-04-27 12:40:53,471 DEBUG   SenderThread:62254 [sender.py:send_request():406] send_request: defer
+2024-04-27 12:40:53,471 INFO    SenderThread:62254 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-04-27 12:40:53,471 INFO    SenderThread:62254 [sender.py:transition_state():614] send defer: 1
+2024-04-27 12:40:53,471 DEBUG   HandlerThread:62254 [handler.py:handle_request():146] handle_request: defer
+2024-04-27 12:40:53,471 INFO    HandlerThread:62254 [handler.py:handle_request_defer():172] handle defer: 1
+2024-04-27 12:40:53,471 DEBUG   SenderThread:62254 [sender.py:send_request():406] send_request: defer
+2024-04-27 12:40:53,471 INFO    SenderThread:62254 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-04-27 12:40:53,471 INFO    SenderThread:62254 [sender.py:transition_state():614] send defer: 2
+2024-04-27 12:40:53,471 DEBUG   HandlerThread:62254 [handler.py:handle_request():146] handle_request: defer
+2024-04-27 12:40:53,471 INFO    HandlerThread:62254 [handler.py:handle_request_defer():172] handle defer: 2
+2024-04-27 12:40:53,471 INFO    HandlerThread:62254 [system_monitor.py:finish():203] Stopping system monitor
+2024-04-27 12:40:53,472 INFO    HandlerThread:62254 [interfaces.py:finish():202] Joined cpu monitor
+2024-04-27 12:40:53,472 DEBUG   SystemMonitor:62254 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-04-27 12:40:53,472 DEBUG   SystemMonitor:62254 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-04-27 12:40:53,472 INFO    HandlerThread:62254 [interfaces.py:finish():202] Joined disk monitor
+2024-04-27 12:40:53,472 DEBUG   SystemMonitor:62254 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-04-27 12:40:53,690 INFO    HandlerThread:62254 [interfaces.py:finish():202] Joined gpuapple monitor
+2024-04-27 12:40:53,690 INFO    HandlerThread:62254 [interfaces.py:finish():202] Joined memory monitor
+2024-04-27 12:40:53,690 INFO    HandlerThread:62254 [interfaces.py:finish():202] Joined network monitor
+2024-04-27 12:40:53,690 DEBUG   SenderThread:62254 [sender.py:send_request():406] send_request: defer
+2024-04-27 12:40:53,690 INFO    SenderThread:62254 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-04-27 12:40:53,691 INFO    SenderThread:62254 [sender.py:transition_state():614] send defer: 3
+2024-04-27 12:40:53,691 DEBUG   SenderThread:62254 [sender.py:send():379] send: telemetry
+2024-04-27 12:40:53,691 DEBUG   SenderThread:62254 [sender.py:send():379] send: stats
+2024-04-27 12:40:53,691 DEBUG   HandlerThread:62254 [handler.py:handle_request():146] handle_request: defer
+2024-04-27 12:40:53,691 INFO    HandlerThread:62254 [handler.py:handle_request_defer():172] handle defer: 3
+2024-04-27 12:40:53,691 DEBUG   SenderThread:62254 [sender.py:send_request():406] send_request: defer
+2024-04-27 12:40:53,691 INFO    SenderThread:62254 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-04-27 12:40:53,691 INFO    SenderThread:62254 [sender.py:transition_state():614] send defer: 4
+2024-04-27 12:40:53,691 DEBUG   HandlerThread:62254 [handler.py:handle_request():146] handle_request: defer
+2024-04-27 12:40:53,691 INFO    HandlerThread:62254 [handler.py:handle_request_defer():172] handle defer: 4
+2024-04-27 12:40:53,691 DEBUG   SenderThread:62254 [sender.py:send_request():406] send_request: defer
+2024-04-27 12:40:53,691 INFO    SenderThread:62254 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-04-27 12:40:53,691 INFO    SenderThread:62254 [sender.py:transition_state():614] send defer: 5
+2024-04-27 12:40:53,691 DEBUG   HandlerThread:62254 [handler.py:handle_request():146] handle_request: defer
+2024-04-27 12:40:53,691 INFO    HandlerThread:62254 [handler.py:handle_request_defer():172] handle defer: 5
+2024-04-27 12:40:53,691 DEBUG   SenderThread:62254 [sender.py:send():379] send: summary
+2024-04-27 12:40:53,692 INFO    SenderThread:62254 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-27 12:40:53,693 DEBUG   SenderThread:62254 [sender.py:send_request():406] send_request: defer
+2024-04-27 12:40:53,693 INFO    SenderThread:62254 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-04-27 12:40:53,693 INFO    SenderThread:62254 [sender.py:transition_state():614] send defer: 6
+2024-04-27 12:40:53,693 DEBUG   HandlerThread:62254 [handler.py:handle_request():146] handle_request: defer
+2024-04-27 12:40:53,693 INFO    HandlerThread:62254 [handler.py:handle_request_defer():172] handle defer: 6
+2024-04-27 12:40:53,693 DEBUG   SenderThread:62254 [sender.py:send_request():406] send_request: defer
+2024-04-27 12:40:53,693 INFO    SenderThread:62254 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-04-27 12:40:53,694 DEBUG   HandlerThread:62254 [handler.py:handle_request():146] handle_request: status_report
+2024-04-27 12:40:54,062 INFO    SenderThread:62254 [sender.py:transition_state():614] send defer: 7
+2024-04-27 12:40:54,062 DEBUG   HandlerThread:62254 [handler.py:handle_request():146] handle_request: defer
+2024-04-27 12:40:54,062 INFO    HandlerThread:62254 [handler.py:handle_request_defer():172] handle defer: 7
+2024-04-27 12:40:54,062 DEBUG   SenderThread:62254 [sender.py:send_request():406] send_request: defer
+2024-04-27 12:40:54,062 INFO    SenderThread:62254 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-04-27 12:40:54,284 INFO    Thread-12 :62254 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/ayotomiwasalau/Documents/data-tools-project/udacity/mlops/ml-pipeline/ml-pipe/download/wandb/run-20240427_124039-iiltbost/files/config.yaml
+2024-04-27 12:40:54,285 INFO    Thread-12 :62254 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/ayotomiwasalau/Documents/data-tools-project/udacity/mlops/ml-pipeline/ml-pipe/download/wandb/run-20240427_124039-iiltbost/files/wandb-summary.json
+2024-04-27 12:40:54,347 INFO    SenderThread:62254 [sender.py:transition_state():614] send defer: 8
+2024-04-27 12:40:54,348 DEBUG   HandlerThread:62254 [handler.py:handle_request():146] handle_request: defer
+2024-04-27 12:40:54,348 INFO    HandlerThread:62254 [handler.py:handle_request_defer():172] handle defer: 8
+2024-04-27 12:40:54,348 DEBUG   SenderThread:62254 [sender.py:send_request():406] send_request: defer
+2024-04-27 12:40:54,348 INFO    SenderThread:62254 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-04-27 12:40:54,348 INFO    SenderThread:62254 [job_builder.py:build():318] Attempting to build job artifact
+2024-04-27 12:40:54,349 INFO    SenderThread:62254 [job_builder.py:_get_source_type():455] is repo sourced job
+2024-04-27 12:40:54,354 INFO    SenderThread:62254 [job_builder.py:build():431] adding wandb-job metadata file
+2024-04-27 12:40:54,357 INFO    SenderThread:62254 [sender.py:transition_state():614] send defer: 9
+2024-04-27 12:40:54,357 DEBUG   HandlerThread:62254 [handler.py:handle_request():146] handle_request: defer
+2024-04-27 12:40:54,357 INFO    HandlerThread:62254 [handler.py:handle_request_defer():172] handle defer: 9
+2024-04-27 12:40:54,357 DEBUG   SenderThread:62254 [sender.py:send():379] send: artifact
+2024-04-27 12:40:54,476 DEBUG   HandlerThread:62254 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-27 12:40:55,286 INFO    Thread-12 :62254 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/ayotomiwasalau/Documents/data-tools-project/udacity/mlops/ml-pipeline/ml-pipe/download/wandb/run-20240427_124039-iiltbost/files/output.log
+2024-04-27 12:40:56,384 INFO    wandb-upload_0:62254 [upload_job.py:push():89] Uploaded file /var/folders/_r/dchdvrt17dbb3l_1jl9f8gm80000gn/T/tmpvi0ry6hn/wandb-job.json
+2024-04-27 12:40:56,694 INFO    wandb-upload_1:62254 [upload_job.py:push():89] Uploaded file /Users/ayotomiwasalau/Library/Application Support/wandb/artifacts/staging/tmpj19bbav2
+2024-04-27 12:40:58,469 INFO    SenderThread:62254 [sender.py:send_artifact():1468] sent artifact job-https___github.com_ayotomiwasalau_ml-pipe.git_download_download_data.py - {'id': 'QXJ0aWZhY3Q6ODEyNzg2MTI4', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE2NzQxMTk0Ng==', 'latestArtifact': None}}
+2024-04-27 12:40:58,470 DEBUG   SenderThread:62254 [sender.py:send_request():406] send_request: defer
+2024-04-27 12:40:58,470 INFO    SenderThread:62254 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-04-27 12:40:58,470 INFO    SenderThread:62254 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-04-27 12:40:59,306 INFO    SenderThread:62254 [dir_watcher.py:finish():388] scan: /Users/ayotomiwasalau/Documents/data-tools-project/udacity/mlops/ml-pipeline/ml-pipe/download/wandb/run-20240427_124039-iiltbost/files
+2024-04-27 12:40:59,307 INFO    SenderThread:62254 [dir_watcher.py:finish():402] scan save: /Users/ayotomiwasalau/Documents/data-tools-project/udacity/mlops/ml-pipeline/ml-pipe/download/wandb/run-20240427_124039-iiltbost/files/requirements.txt requirements.txt
+2024-04-27 12:40:59,307 INFO    SenderThread:62254 [dir_watcher.py:finish():402] scan save: /Users/ayotomiwasalau/Documents/data-tools-project/udacity/mlops/ml-pipeline/ml-pipe/download/wandb/run-20240427_124039-iiltbost/files/output.log output.log
+2024-04-27 12:40:59,310 INFO    SenderThread:62254 [dir_watcher.py:finish():402] scan save: /Users/ayotomiwasalau/Documents/data-tools-project/udacity/mlops/ml-pipeline/ml-pipe/download/wandb/run-20240427_124039-iiltbost/files/config.yaml config.yaml
+2024-04-27 12:40:59,312 INFO    SenderThread:62254 [dir_watcher.py:finish():402] scan save: /Users/ayotomiwasalau/Documents/data-tools-project/udacity/mlops/ml-pipeline/ml-pipe/download/wandb/run-20240427_124039-iiltbost/files/wandb-summary.json wandb-summary.json
+2024-04-27 12:40:59,314 INFO    SenderThread:62254 [dir_watcher.py:finish():402] scan save: /Users/ayotomiwasalau/Documents/data-tools-project/udacity/mlops/ml-pipeline/ml-pipe/download/wandb/run-20240427_124039-iiltbost/files/conda-environment.yaml conda-environment.yaml
+2024-04-27 12:40:59,315 INFO    SenderThread:62254 [dir_watcher.py:finish():402] scan save: /Users/ayotomiwasalau/Documents/data-tools-project/udacity/mlops/ml-pipeline/ml-pipe/download/wandb/run-20240427_124039-iiltbost/files/wandb-metadata.json wandb-metadata.json
+2024-04-27 12:40:59,316 INFO    SenderThread:62254 [sender.py:transition_state():614] send defer: 10
+2024-04-27 12:40:59,317 DEBUG   SenderThread:62254 [sender.py:send_request():406] send_request: poll_exit
+2024-04-27 12:40:59,318 DEBUG   HandlerThread:62254 [handler.py:handle_request():146] handle_request: defer
+2024-04-27 12:40:59,320 INFO    HandlerThread:62254 [handler.py:handle_request_defer():172] handle defer: 10
+2024-04-27 12:40:59,321 DEBUG   SenderThread:62254 [sender.py:send_request():406] send_request: defer
+2024-04-27 12:40:59,321 INFO    SenderThread:62254 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-04-27 12:40:59,321 INFO    SenderThread:62254 [file_pusher.py:finish():172] shutting down file pusher
+2024-04-27 12:40:59,497 DEBUG   HandlerThread:62254 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-27 12:40:59,497 DEBUG   HandlerThread:62254 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-27 12:40:59,498 DEBUG   SenderThread:62254 [sender.py:send_request():406] send_request: poll_exit
+2024-04-27 12:40:59,980 INFO    wandb-upload_2:62254 [upload_job.py:push():131] Uploaded file /Users/ayotomiwasalau/Documents/data-tools-project/udacity/mlops/ml-pipeline/ml-pipe/download/wandb/run-20240427_124039-iiltbost/files/config.yaml
+2024-04-27 12:40:59,994 INFO    wandb-upload_0:62254 [upload_job.py:push():131] Uploaded file /Users/ayotomiwasalau/Documents/data-tools-project/udacity/mlops/ml-pipeline/ml-pipe/download/wandb/run-20240427_124039-iiltbost/files/requirements.txt
+2024-04-27 12:41:00,501 DEBUG   HandlerThread:62254 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-27 12:41:00,502 DEBUG   SenderThread:62254 [sender.py:send_request():406] send_request: poll_exit
+2024-04-27 12:41:00,582 INFO    wandb-upload_3:62254 [upload_job.py:push():131] Uploaded file /Users/ayotomiwasalau/Documents/data-tools-project/udacity/mlops/ml-pipeline/ml-pipe/download/wandb/run-20240427_124039-iiltbost/files/wandb-summary.json
+2024-04-27 12:41:00,600 INFO    wandb-upload_1:62254 [upload_job.py:push():131] Uploaded file /Users/ayotomiwasalau/Documents/data-tools-project/udacity/mlops/ml-pipeline/ml-pipe/download/wandb/run-20240427_124039-iiltbost/files/output.log
+2024-04-27 12:41:00,607 INFO    wandb-upload_4:62254 [upload_job.py:push():131] Uploaded file /Users/ayotomiwasalau/Documents/data-tools-project/udacity/mlops/ml-pipeline/ml-pipe/download/wandb/run-20240427_124039-iiltbost/files/conda-environment.yaml
+2024-04-27 12:41:00,812 INFO    Thread-11 (_thread_body):62254 [sender.py:transition_state():614] send defer: 11
+2024-04-27 12:41:00,813 DEBUG   HandlerThread:62254 [handler.py:handle_request():146] handle_request: defer
+2024-04-27 12:41:00,813 INFO    HandlerThread:62254 [handler.py:handle_request_defer():172] handle defer: 11
+2024-04-27 12:41:00,814 DEBUG   SenderThread:62254 [sender.py:send_request():406] send_request: defer
+2024-04-27 12:41:00,814 INFO    SenderThread:62254 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-04-27 12:41:00,814 INFO    SenderThread:62254 [file_pusher.py:join():178] waiting for file pusher
+2024-04-27 12:41:00,816 INFO    SenderThread:62254 [sender.py:transition_state():614] send defer: 12
+2024-04-27 12:41:00,816 DEBUG   HandlerThread:62254 [handler.py:handle_request():146] handle_request: defer
+2024-04-27 12:41:00,816 INFO    HandlerThread:62254 [handler.py:handle_request_defer():172] handle defer: 12
+2024-04-27 12:41:00,816 DEBUG   SenderThread:62254 [sender.py:send_request():406] send_request: defer
+2024-04-27 12:41:00,816 INFO    SenderThread:62254 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-04-27 12:41:00,817 INFO    SenderThread:62254 [file_stream.py:finish():614] file stream finish called
+2024-04-27 12:41:01,144 INFO    SenderThread:62254 [file_stream.py:finish():618] file stream finish is done
+2024-04-27 12:41:01,145 INFO    SenderThread:62254 [sender.py:transition_state():614] send defer: 13
+2024-04-27 12:41:01,145 DEBUG   HandlerThread:62254 [handler.py:handle_request():146] handle_request: defer
+2024-04-27 12:41:01,146 INFO    HandlerThread:62254 [handler.py:handle_request_defer():172] handle defer: 13
+2024-04-27 12:41:01,146 DEBUG   SenderThread:62254 [sender.py:send_request():406] send_request: defer
+2024-04-27 12:41:01,146 INFO    SenderThread:62254 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-04-27 12:41:01,146 INFO    SenderThread:62254 [sender.py:transition_state():614] send defer: 14
+2024-04-27 12:41:01,147 DEBUG   HandlerThread:62254 [handler.py:handle_request():146] handle_request: defer
+2024-04-27 12:41:01,147 DEBUG   SenderThread:62254 [sender.py:send():379] send: final
+2024-04-27 12:41:01,147 INFO    HandlerThread:62254 [handler.py:handle_request_defer():172] handle defer: 14
+2024-04-27 12:41:01,147 DEBUG   SenderThread:62254 [sender.py:send():379] send: footer
+2024-04-27 12:41:01,147 DEBUG   SenderThread:62254 [sender.py:send_request():406] send_request: defer
+2024-04-27 12:41:01,147 INFO    SenderThread:62254 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-04-27 12:41:01,149 DEBUG   HandlerThread:62254 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-27 12:41:01,149 DEBUG   SenderThread:62254 [sender.py:send_request():406] send_request: poll_exit
+2024-04-27 12:41:01,150 DEBUG   HandlerThread:62254 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-27 12:41:01,151 DEBUG   HandlerThread:62254 [handler.py:handle_request():146] handle_request: server_info
+2024-04-27 12:41:01,151 DEBUG   HandlerThread:62254 [handler.py:handle_request():146] handle_request: get_summary
+2024-04-27 12:41:01,151 DEBUG   SenderThread:62254 [sender.py:send_request():406] send_request: server_info
+2024-04-27 12:41:01,151 DEBUG   HandlerThread:62254 [handler.py:handle_request():146] handle_request: sampled_history
+2024-04-27 12:41:01,439 DEBUG   HandlerThread:62254 [handler.py:handle_request():146] handle_request: shutdown
+2024-04-27 12:41:01,440 INFO    HandlerThread:62254 [handler.py:finish():866] shutting down handler
+2024-04-27 12:41:02,156 INFO    WriterThread:62254 [datastore.py:close():296] close: /Users/ayotomiwasalau/Documents/data-tools-project/udacity/mlops/ml-pipeline/ml-pipe/download/wandb/run-20240427_124039-iiltbost/run-iiltbost.wandb
+2024-04-27 12:41:02,443 INFO    SenderThread:62254 [sender.py:finish():1546] shutting down sender
+2024-04-27 12:41:02,443 INFO    SenderThread:62254 [file_pusher.py:finish():172] shutting down file pusher
+2024-04-27 12:41:02,443 INFO    SenderThread:62254 [file_pusher.py:join():178] waiting for file pusher

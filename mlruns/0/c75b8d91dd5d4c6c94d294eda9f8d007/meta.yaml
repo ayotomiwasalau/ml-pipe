@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/ayotomiwasalau/Documents/data-tools-project/udacity/mlops/ml-pipeline/ml-pipe/mlruns/0/c75b8d91dd5d4c6c94d294eda9f8d007/artifacts
+end_time: 1714240678212
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c75b8d91dd5d4c6c94d294eda9f8d007
+run_name: unruly-perch-252
+run_uuid: c75b8d91dd5d4c6c94d294eda9f8d007
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1714240656556
+status: 3
+tags: []
+user_id: ayotomiwasalau

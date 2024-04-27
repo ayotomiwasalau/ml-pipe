@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/ayotomiwasalau/Documents/data-tools-project/udacity/mlops/ml-pipeline/ml-pipe/mlruns/0/8d5b092d54404cfd9fed8f0fdfe91131/artifacts
+end_time: 1714240818648
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 8d5b092d54404cfd9fed8f0fdfe91131
+run_name: clumsy-shark-993
+run_uuid: 8d5b092d54404cfd9fed8f0fdfe91131
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1714240791226
+status: 3
+tags: []
+user_id: ayotomiwasalau

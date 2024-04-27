@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/ayotomiwasalau/Documents/data-tools-project/udacity/mlops/ml-pipeline/ml-pipe/mlruns/0/daa86893362c46e08915b94cddd6661d/artifacts
+end_time: 1714217714861
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: daa86893362c46e08915b94cddd6661d
+run_name: silent-crow-137
+run_uuid: daa86893362c46e08915b94cddd6661d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1714217711189
+status: 4
+tags: []
+user_id: ayotomiwasalau

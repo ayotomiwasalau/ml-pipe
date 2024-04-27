@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/ayotomiwasalau/Documents/data-tools-project/udacity/mlops/ml-pipeline/ml-pipe/mlruns/0/495ad357ee1a42eeab75f9de946085ca/artifacts
+end_time: 1714217460876
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 495ad357ee1a42eeab75f9de946085ca
+run_name: thoughtful-crane-650
+run_uuid: 495ad357ee1a42eeab75f9de946085ca
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1714217447512
+status: 4
+tags: []
+user_id: ayotomiwasalau

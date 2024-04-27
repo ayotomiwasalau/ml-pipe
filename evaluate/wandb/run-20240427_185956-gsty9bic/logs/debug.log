@@ -1,0 +1,28 @@
+2024-04-27 18:59:56,171 INFO    MainThread:76400 [wandb_setup.py:_flush():76] Current SDK version is 0.16.6
+2024-04-27 18:59:56,171 INFO    MainThread:76400 [wandb_setup.py:_flush():76] Configure stats pid to 76400
+2024-04-27 18:59:56,171 INFO    MainThread:76400 [wandb_setup.py:_flush():76] Loading settings from /Users/ayotomiwasalau/.config/wandb/settings
+2024-04-27 18:59:56,171 INFO    MainThread:76400 [wandb_setup.py:_flush():76] Loading settings from /Users/ayotomiwasalau/Documents/data-tools-project/udacity/mlops/ml-pipeline/ml-pipe/evaluate/wandb/settings
+2024-04-27 18:59:56,171 INFO    MainThread:76400 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'project': 'exercise_14', 'run_group': 'dev'}
+2024-04-27 18:59:56,172 INFO    MainThread:76400 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-04-27 18:59:56,172 INFO    MainThread:76400 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'evaluate/run.py', 'program_abspath': '/Users/ayotomiwasalau/Documents/data-tools-project/udacity/mlops/ml-pipeline/ml-pipe/evaluate/run.py', 'program': '/Users/ayotomiwasalau/Documents/data-tools-project/udacity/mlops/ml-pipeline/ml-pipe/evaluate/run.py'}
+2024-04-27 18:59:56,172 INFO    MainThread:76400 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-04-27 18:59:56,172 INFO    MainThread:76400 [wandb_init.py:_log_setup():521] Logging user logs to /Users/ayotomiwasalau/Documents/data-tools-project/udacity/mlops/ml-pipeline/ml-pipe/evaluate/wandb/run-20240427_185956-gsty9bic/logs/debug.log
+2024-04-27 18:59:56,173 INFO    MainThread:76400 [wandb_init.py:_log_setup():522] Logging internal logs to /Users/ayotomiwasalau/Documents/data-tools-project/udacity/mlops/ml-pipeline/ml-pipe/evaluate/wandb/run-20240427_185956-gsty9bic/logs/debug-internal.log
+2024-04-27 18:59:56,173 INFO    MainThread:76400 [wandb_init.py:init():561] calling init triggers
+2024-04-27 18:59:56,173 INFO    MainThread:76400 [wandb_init.py:init():568] wandb.init called with sweep_config: {}
+config: {}
+2024-04-27 18:59:56,173 INFO    MainThread:76400 [wandb_init.py:init():611] starting backend
+2024-04-27 18:59:56,173 INFO    MainThread:76400 [wandb_init.py:init():615] setting up manager
+2024-04-27 18:59:56,176 INFO    MainThread:76400 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2024-04-27 18:59:56,180 INFO    MainThread:76400 [wandb_init.py:init():623] backend started and connected
+2024-04-27 18:59:56,187 INFO    MainThread:76400 [wandb_init.py:init():715] updated telemetry
+2024-04-27 18:59:56,221 INFO    MainThread:76400 [wandb_init.py:init():748] communicating run to backend with 90.0 second timeout
+2024-04-27 18:59:57,375 INFO    MainThread:76400 [wandb_run.py:_on_init():2357] communicating current version
+2024-04-27 18:59:58,113 INFO    MainThread:76400 [wandb_run.py:_on_init():2366] got version response 
+2024-04-27 18:59:58,115 INFO    MainThread:76400 [wandb_init.py:init():799] starting run threads in backend
+2024-04-27 18:59:59,494 INFO    MainThread:76400 [wandb_run.py:_console_start():2335] atexit reg
+2024-04-27 18:59:59,494 INFO    MainThread:76400 [wandb_run.py:_redirect():2190] redirect: wrap_raw
+2024-04-27 18:59:59,494 INFO    MainThread:76400 [wandb_run.py:_redirect():2255] Wrapping output streams.
+2024-04-27 18:59:59,494 INFO    MainThread:76400 [wandb_run.py:_redirect():2280] Redirects installed.
+2024-04-27 18:59:59,495 INFO    MainThread:76400 [wandb_init.py:init():842] run started, returning control to user process
+2024-04-27 19:00:16,772 WARNING MsgRouterThr:76400 [router.py:message_loop():77] message_loop has been closed

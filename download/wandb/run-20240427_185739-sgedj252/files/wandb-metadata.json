@@ -1,0 +1,58 @@
+{
+    "os": "macOS-13.5.2-arm64-arm-64bit",
+    "python": "3.12.2",
+    "heartbeatAt": "2024-04-27T17:57:41.500230",
+    "startedAt": "2024-04-27T17:57:39.647287",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--file_url",
+        "https://github.com/udacity/nd0821-c2-build-model-workflow-exercises/blob/master/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/genres_mod.parquet?raw=true",
+        "--artifact_name",
+        "raw_data.parquet",
+        "--artifact_type",
+        "raw_data",
+        "--artifact_description",
+        "Data as downloaded"
+    ],
+    "state": "running",
+    "program": "/Users/ayotomiwasalau/Documents/data-tools-project/udacity/mlops/ml-pipeline/ml-pipe/download/download_data.py",
+    "codePathLocal": "download_data.py",
+    "codePath": "download/download_data.py",
+    "git": {
+        "remote": "https://github.com/ayotomiwasalau/ml-pipe.git",
+        "commit": "c753284f362bc3769c2df179aa3eddb270d036aa"
+    },
+    "email": "ayotomiwasalau@gmail.com",
+    "root": "/Users/ayotomiwasalau/Documents/data-tools-project/udacity/mlops/ml-pipeline/ml-pipe",
+    "host": "ayotomialausMBP",
+    "username": "ayotomiwasalau",
+    "executable": "/Users/ayotomiwasalau/anaconda3/envs/mlflow-5daac8e92275e8dddf3caefc785f4a790d74a6e6/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 3228,
+        "min": 600,
+        "max": 3228
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3228,
+            "min": 600,
+            "max": 3228
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 460.4317207336426,
+            "used": 11.107654571533203
+        }
+    },
+    "gpuapple": {
+        "type": "arm",
+        "vendor": "Apple"
+    },
+    "memory": {
+        "total": 16.0
+    }
+}

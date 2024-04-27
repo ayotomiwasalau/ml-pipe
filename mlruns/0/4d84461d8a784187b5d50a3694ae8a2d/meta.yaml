@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/ayotomiwasalau/Documents/data-tools-project/udacity/mlops/ml-pipeline/ml-pipe/mlruns/0/4d84461d8a784187b5d50a3694ae8a2d/artifacts
+end_time: 1714240742660
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4d84461d8a784187b5d50a3694ae8a2d
+run_name: mysterious-wolf-84
+run_uuid: 4d84461d8a784187b5d50a3694ae8a2d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1714240717652
+status: 3
+tags: []
+user_id: ayotomiwasalau

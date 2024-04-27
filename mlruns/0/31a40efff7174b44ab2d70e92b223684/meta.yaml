@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/ayotomiwasalau/Documents/data-tools-project/udacity/mlops/ml-pipeline/ml-pipe/mlruns/0/31a40efff7174b44ab2d70e92b223684/artifacts
+end_time: 1714221777893
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 31a40efff7174b44ab2d70e92b223684
+run_name: rogue-stork-961
+run_uuid: 31a40efff7174b44ab2d70e92b223684
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1714221732359
+status: 3
+tags: []
+user_id: ayotomiwasalau

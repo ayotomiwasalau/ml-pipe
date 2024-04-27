@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/ayotomiwasalau/Documents/data-tools-project/udacity/mlops/ml-pipeline/ml-pipe/mlruns/0/a70c17dad5904b9f81267fb4bb12234d/artifacts
+end_time: 1714221732315
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a70c17dad5904b9f81267fb4bb12234d
+run_name: delightful-wasp-909
+run_uuid: a70c17dad5904b9f81267fb4bb12234d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1714221712793
+status: 3
+tags: []
+user_id: ayotomiwasalau

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/ayotomiwasalau/Documents/data-tools-project/udacity/mlops/ml-pipeline/ml-pipe/mlruns/0/38865a4a66c9430aa831ae1626a5306e/artifacts
+end_time: 1714239324550
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 38865a4a66c9430aa831ae1626a5306e
+run_name: learned-shrew-66
+run_uuid: 38865a4a66c9430aa831ae1626a5306e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1714239305075
+status: 3
+tags: []
+user_id: ayotomiwasalau

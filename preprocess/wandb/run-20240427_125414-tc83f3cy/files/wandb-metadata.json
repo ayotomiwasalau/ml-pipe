@@ -1,0 +1,31 @@
+{
+    "os": "macOS-13.5.2-arm64-arm-64bit",
+    "python": "3.9.15",
+    "heartbeatAt": "2024-04-27T11:54:17.573426",
+    "startedAt": "2024-04-27T11:54:14.703571",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        "--input_artifact",
+        "raw_data.parquet:latest",
+        "--artifact_name",
+        "preprocessed_data.csv",
+        "--artifact_type",
+        "preprocessed_data",
+        "--artifact_description",
+        "Data with preprocessing applied"
+    ],
+    "state": "running",
+    "program": "/Users/ayotomiwasalau/Documents/data-tools-project/udacity/mlops/ml-pipeline/ml-pipe/preprocess/run.py",
+    "codePath": "preprocess/run.py",
+    "git": {
+        "remote": "https://github.com/ayotomiwasalau/ml-pipe.git",
+        "commit": "c753284f362bc3769c2df179aa3eddb270d036aa"
+    },
+    "email": "ayotomiwasalau@gmail.com",
+    "root": "/Users/ayotomiwasalau/Documents/data-tools-project/udacity/mlops/ml-pipeline/ml-pipe",
+    "host": "ayotomialausMBP",
+    "username": "ayotomiwasalau",
+    "executable": "/Users/ayotomiwasalau/anaconda3/envs/mlflow-484b576132a8d4f86bd93cd736b9c9cac218a14d/bin/python"
+}
