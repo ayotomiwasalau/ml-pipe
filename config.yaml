@@ -6,8 +6,8 @@ main:
     - preprocess
     - check_data
     - segregate
-    - random_forest
-    - evaluate
+    - llm_train
+    - evaluate_llm
   # This seed will be used to seed the random number generator
   # to ensure repeatibility of the data splits and other
   # pseudo-random operations
@@ -22,46 +22,8 @@ data:
   # Stratify according to the target when splitting the data
   # in train/test or in train/val
   stratify: genre
-random_forest_pipeline:
-  random_forest:
-    n_estimators: 100
-    criterion: 'gini'
-    max_depth: 13
-    min_samples_split: 2
-    min_samples_leaf: 1
-    min_weight_fraction_leaf: 0.0
-    max_features: 'auto'
-    max_leaf_nodes: null
-    min_impurity_decrease: 0.0
-    min_impurity_split: null
-    bootstrap: true
-    oob_score: false
-    n_jobs: null
-    # This is a different random seed than main.random_seed,
-    # because this is used only within the RandomForest
-    random_state: 42
-    verbose: 0
-    warm_start: false
-    class_weight: "balanced"
-    ccp_alpha: 0.0
-    max_samples: null
-  tfidf:
-    max_features: 10
-  features:
-    numerical:
-      - "danceability"
-      - "energy"
-      - "loudness"
-      - "speechiness"
-      - "acousticness"
-      - "instrumentalness"
-      - "liveness"
-      - "valence"
-      - "tempo"
-      - "duration_ms"
-    categorical:
-      - "time_signature"
-      - "key"
-    nlp:
-      - "text_feature"
-  export_artifact: "model_export"
+llm:
+  model_name: distilbert-base-uncased
+  epochs: 1
+  batch_size: 8
+  export_artifact: "llm_model_export"
