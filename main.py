@@ -76,6 +76,23 @@ def go(config: DictConfig):
             },
         )
 
+    if "llm_train" in steps_to_execute:
+
+        _ = mlflow.run(
+            os.path.join(root_path, "llm_train"),
+            "main",
+            parameters={
+                "train_data": "data_train.csv:latest",
+                "model_name": config["llm"]["model_name"],
+                "export_artifact": config["llm"]["export_artifact"],
+                "random_seed": config["main"]["random_seed"],
+                "val_size": config["data"]["val_size"],
+                "stratify": config["data"]["stratify"],
+                "epochs": config["llm"]["epochs"],
+                "batch_size": config["llm"]["batch_size"],
+            }
+        )
+
     if "random_forest" in steps_to_execute:
 
         # Serialize decision tree configuration
@@ -95,6 +112,17 @@ def go(config: DictConfig):
                 "val_size": config["data"]["test_size"],
                 "stratify": config["data"]["stratify"]
             }
+        )
+
+    if "evaluate_llm" in steps_to_execute:
+
+        _ = mlflow.run(
+            os.path.join(root_path, "evaluate_llm"),
+            "main",
+            parameters={
+                "model_export": f"{config['llm']['export_artifact']}:latest",
+                "test_data": "data_test.csv:latest",
+            },
         )
 
     if "evaluate" in steps_to_execute:

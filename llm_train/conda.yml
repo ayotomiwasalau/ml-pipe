@@ -1,0 +1,15 @@
+name: llm_train
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8
+  - pip
+  - pandas
+  - scikit-learn
+  - pytorch
+  - mlflow
+  - pip:
+      - wandb
+      - transformers
+      - datasets
